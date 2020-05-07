@@ -1,0 +1,621 @@
+From 1ca8899978c88b51808310af94aa66a65702b467 Mon Sep 17 00:00:00 2001
+From: Kruthika Niranjan Palleda <palledakruthika@gmail.com>
+Date: Tue, 5 May 2020 22:24:00 -0700
+Subject: [PATCH] Create Patch File
+
+---
+ .idea/JPMC-tech-task-1.iml |  13 ++
+ .idea/misc.xml             |   4 +
+ .idea/modules.xml          |   8 +
+ .idea/vcs.xml              |   6 +
+ .idea/workspace.xml        | 399 +++++++++++++++++++++++++++++++++++++++++++++
+ client.py                  |  10 +-
+ client_test.py             |  70 +++++++-
+ 7 files changed, 506 insertions(+), 4 deletions(-)
+ create mode 100644 .idea/JPMC-tech-task-1.iml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+
+diff --git a/.idea/JPMC-tech-task-1.iml b/.idea/JPMC-tech-task-1.iml
+new file mode 100644
+index 0000000..6e36872
+--- /dev/null
++++ b/.idea/JPMC-tech-task-1.iml
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
++    </content>
++    <orderEntry type="jdk" jdkName="Python 2.7.10 (/usr/bin/python)" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="TestRunnerService">
++    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+index 0000000..70858da
+--- /dev/null
++++ b/.idea/misc.xml
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.10 (/usr/bin/python)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+index 0000000..3db7d49
+--- /dev/null
++++ b/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/JPMC-tech-task-1.iml" filepath="$PROJECT_DIR$/.idea/JPMC-tech-task-1.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+index 0000000..94a25f7
+--- /dev/null
++++ b/.idea/vcs.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+index 0000000..e5cbf81
+--- /dev/null
++++ b/.idea/workspace.xml
+@@ -0,0 +1,399 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="2ac43c14-ed33-4fdb-9f38-3dd4be56a1bc" name="Default" comment="">
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client.py" afterPath="$PROJECT_DIR$/client.py" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client_test.py" afterPath="$PROJECT_DIR$/client_test.py" />
++    </list>
++    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
++    <option name="TRACKING_ENABLED" value="true" />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="CreatePatchCommitExecutor">
++    <option name="PATCH_PATH" value="" />
++  </component>
++  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
++  <component name="FileEditorManager">
++    <leaf>
++      <file leaf-file-name="client.py" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/client.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="168">
++              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="client_test.py" pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/client_test.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="90">
++              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
++              <folding>
++                <element signature="e#0#15#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
++        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="177">
++              <caret line="509" column="44" lean-forward="false" selection-start-line="509" selection-start-column="41" selection-end-line="509" selection-end-column="44" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++    </leaf>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="IdeDocumentHistory">
++    <option name="CHANGED_PATHS">
++      <list>
++        <option value="$PROJECT_DIR$/client.py" />
++        <option value="$PROJECT_DIR$/client_test.py" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectFrameBounds">
++    <option name="y" value="23" />
++    <option name="width" value="1680" />
++    <option name="height" value="955" />
++  </component>
++  <component name="ProjectView">
++    <navigator currentView="ProjectPane" proportions="" version="1">
++      <flattenPackages />
++      <showMembers />
++      <showModules />
++      <showLibraryContents />
++      <hideEmptyPackages />
++      <abbreviatePackageNames />
++      <autoscrollToSource />
++      <autoscrollFromSource />
++      <sortByType />
++      <manualOrder />
++      <foldersAlwaysOnTop value="true" />
++    </navigator>
++    <panes>
++      <pane id="Scope" />
++      <pane id="Scratches" />
++      <pane id="ProjectPane">
++        <subPane>
++          <PATH>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="JPMC-tech-task-1" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="JPMC-tech-task-1" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++          </PATH>
++        </subPane>
++      </pane>
++    </panes>
++  </component>
++  <component name="PropertiesComponent">
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
++  </component>
++  <component name="RunManager" selected="Python tests.Unittests in client_test">
++    <configuration default="false" name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="JPMC-tech-task-1" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <method />
++    </configuration>
++    <configuration default="false" name="Unittests in client_test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="JPMC-tech-task-1" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client_test.py" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <option name="PUREUNITTEST" value="true" />
++      <option name="PARAMS" value="" />
++      <option name="USE_PARAM" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="JPMC-tech-task-1" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="Tox" factoryName="Tox">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="JPMC-tech-task-1" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Attests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="JPMC-tech-task-1" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Doctests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="JPMC-tech-task-1" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Nosetests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="JPMC-tech-task-1" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <option name="PARAMS" value="" />
++      <option name="USE_PARAM" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="Unittests">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="JPMC-tech-task-1" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <option name="PUREUNITTEST" value="true" />
++      <option name="PARAMS" value="" />
++      <option name="USE_PARAM" value="false" />
++      <method />
++    </configuration>
++    <configuration default="true" type="tests" factoryName="py.test">
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs />
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="" />
++      <option name="IS_MODULE_SDK" value="false" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <module name="JPMC-tech-task-1" />
++      <option name="SCRIPT_NAME" value="" />
++      <option name="CLASS_NAME" value="" />
++      <option name="METHOD_NAME" value="" />
++      <option name="FOLDER_NAME" value="" />
++      <option name="TEST_TYPE" value="TEST_SCRIPT" />
++      <option name="PATTERN" value="" />
++      <option name="USE_PATTERN" value="false" />
++      <option name="testToRun" value="" />
++      <option name="keywords" value="" />
++      <option name="params" value="" />
++      <option name="USE_PARAM" value="false" />
++      <option name="USE_KEYWORD" value="false" />
++      <method />
++    </configuration>
++    <list size="2">
++      <item index="0" class="java.lang.String" itemvalue="Python.client" />
++      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in client_test" />
++    </list>
++    <recent_temporary>
++      <list size="2">
++        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in client_test" />
++        <item index="1" class="java.lang.String" itemvalue="Python.client" />
++      </list>
++    </recent_temporary>
++  </component>
++  <component name="ShelveChangesManager" show_recycled="false">
++    <option name="remove_strategy" value="false" />
++  </component>
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="2ac43c14-ed33-4fdb-9f38-3dd4be56a1bc" name="Default" comment="" />
++      <created>1588718733351</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1588718733351</updated>
++    </task>
++    <servers />
++  </component>
++  <component name="TestHistory">
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 00m 49s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 00m 58s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 02m 19s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 02m 24s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 02m 36s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 02m 45s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 03m 14s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 06m 30s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 11m 48s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++    <history-entry file="Unittests_in_client_test - 2020.05.05 at 22h 18m 53s.xml">
++      <configuration name="Unittests in client_test" configurationId="tests" />
++    </history-entry>
++  </component>
++  <component name="ToolWindowManager">
++    <frame x="0" y="23" width="1680" height="955" extended-state="6" />
++    <editor active="true" />
++    <layout>
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20735383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24970132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24954791" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4814815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
++      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
++      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++    </layout>
++  </component>
++  <component name="VcsContentAnnotationSettings">
++    <option name="myLimit" value="2678400000" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <option name="time" value="3" />
++    </breakpoint-manager>
++    <watches-manager />
++  </component>
++  <component name="editorHistoryManager">
++    <entry file="file://$PROJECT_DIR$/client.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="168">
++          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="177">
++          <caret line="509" column="44" lean-forward="false" selection-start-line="509" selection-start-column="41" selection-end-line="509" selection-end-column="44" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/client_test.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="90">
++          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
++          <folding>
++            <element signature="e#0#15#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/client.py b/client.py
+index 40badcd..793b8cc 100644
+--- a/client.py
++++ b/client.py
+@@ -35,14 +35,16 @@ def getDataPoint(quote):
+ 	stock = quote['stock']
+ 	bid_price = float(quote['top_bid']['price'])
+ 	ask_price = float(quote['top_ask']['price'])
+-	price = bid_price
++	price = (bid_price + ask_price)/2
+ 	return stock, bid_price, ask_price, price
+ 
+ def getRatio(price_a, price_b):
+ 	""" Get ratio of price_a and price_b """
+ 	""" ------------- Update this function ------------- """
+ 	""" Also create some unit tests for this function in client_test.py """
+-	return 1
++	if price_b == 0:
++		return    #when price_b is 0 avoid throwing ZeroDivision error
++	return price_a/price_b
+ 
+ # Main
+ if __name__ == "__main__":
+@@ -52,8 +54,10 @@ if __name__ == "__main__":
+ 		quotes = json.loads(urllib2.urlopen(QUERY.format(random.random())).read())
+ 
+ 		""" ----------- Update to get the ratio --------------- """
++		prices = {}  #creat empty dict to add key-value pair to it
+ 		for quote in quotes:
+ 			stock, bid_price, ask_price, price = getDataPoint(quote)
++			prices[stock] = price   #assign price to dict
+ 			print "Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price)
+ 
+-		print "Ratio %s" % getRatio(price, price)
++		print "Ratio %s" % getRatio(prices['ABC'],prices['DEF'])  #print percentage for stock ABC and DEF
+diff --git a/client_test.py b/client_test.py
+index a608a01..ac839a3 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -1,12 +1,18 @@
+ import unittest
+-from client import getDataPoint
++from client import getDataPoint, getRatio
+ 
+ class ClientTest(unittest.TestCase):
++
++#Unit Test Cases for getDataPoint;
++
+   def test_getDataPoint_calculatePrice(self):
+     quotes = [
+       {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
++
++    for n in quotes:
++      self.assertEqual(getDataPoint(n),(n['stock'], n['top_bid']['price'], n['top_ask']['price'], (n['top_bid']['price'] + n['top_ask']['price'])/2))
+     """ ------------ Add the assertion below ------------ """
+ 
+   def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+@@ -14,11 +20,73 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
++    for n in quotes:
++      self.assertEqual(getDataPoint(n),(n['stock'], n['top_bid']['price'], n['top_ask']['price'], (n['top_bid']['price'] + n['top_ask']['price'])/2))
+     """ ------------ Add the assertion below ------------ """
+ 
++    #Check for null(value) inputs in top_ask with respect to top_price and size;
++
++  def test_ForNull_valueForTop_ask(self):
++     n = [
++       {'top_ask': {'price': 0, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 115.48, 'size': 67}, 'id': '0.109974697771', 'stock': 'ABC'},
++       {'top_ask': {'price': 110.89, 'size': 0}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 100.09, 'size': 99}, 'id': '0.109974697771', 'stock': 'ABC'},
++     ]
++     for n in n:
++       self.assertEqual(getDataPoint(n), (n['stock'], n['top_bid']['price'], n['top_ask']['price'],(n['top_bid']['price'] + n['top_ask']['price']) / 2))
++
++    #Check for null(value) inputs in top_bid with respect to top_price and size;
++
++
++  def test_ForNull_valueForTop_bid(self):
++     quotes = [
++       {'top_ask': {'price': 96.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 0, 'size': 10}, 'id': '0.109974697771', 'stock': 'ABC'},
++       {'top_ask': {'price': 96.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 44, 'size': 0}, 'id': '0.109974697771', 'stock': 'ABC'},
++     ]
++     for n in quotes:
++       self.assertEqual(getDataPoint(n), (n['stock'], n['top_bid']['price'], n['top_ask']['price'],(n['top_bid']['price'] + n['top_ask']['price']) / 2))
++
++    #Check if the testcase has duplicates stocks , datas ;
++
++  def test_ForDuplicate_value(self):
++     quotes = [
++       {'top_ask': {'price': 96.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 89.05, 'size': 66}, 'id': '0.109974697771', 'stock': 'DEF'},
++       {'top_ask': {'price': 96.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 89.05, 'size': 66}, 'id': '0.109974697771', 'stock': 'DEF'},
++     ]
++     for n in quotes:
++      self.assertEqual(getDataPoint(n), (n['stock'], n['top_bid']['price'], n['top_ask']['price'], (n['top_bid']['price'] + n['top_ask']['price']) / 2))
+ 
+   """ ------------ Add more unit tests ------------ """
+ 
++  # Check for null(value) inputs in stock;
++
++  def test_ForNull_valueForStock(self):
++     quotes = [
++       {'top_ask': {'price': 96.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 0, 'size': 10}, 'id': '0.109974697771', 'stock': ''},
++       {'top_ask': {'price': 96.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 44, 'size': 0}, 'id': '0.109974697771', 'stock': ''},
++     ]
++     for n in quotes:
++       self.assertEqual(getDataPoint(n), (n['stock'], n['top_bid']['price'], n['top_ask']['price'],(n['top_bid']['price'] + n['top_ask']['price']) / 2))
++
++
++#Unit test cases for getRation;
++
++  #Check for actual result which equals to expected result;
++
++  def test_value_ActualResult_Equals_ExpectedResults(self):
++    quotes = [
++        {'price_a' : 10.8 , 'price_b' : 5.7 }
++    ]
++    for q in quotes:
++      self.assertEqual(getRatio(q['price_a'],q['price_b']) , 1.8947368421052633)
++
++  #Check for negative result value;
++
++  def test_Negative_ValueResult(self):
++      quotes = [
++          {'price_a': -10.8 , 'price_b' : 5.7 }
++      ]
++      for q in quotes:
++          self.assertEqual(getRatio(q['price_a'],q['price_b']), -1.8947368421052633)
+ 
+ 
+ if __name__ == '__main__':
+-- 
+2.12.0
+
